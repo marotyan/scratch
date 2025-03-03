@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.4" />
+    <!-- 0.4で作成 -->
+    <title>NIL</title>
+    <meta name="description" content="環境について考える" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- p5.jsのライブラリを読み込む -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  </head>
+
+  <body>
+    <div id="loading" class="loading">
+      <div class="loading__contents">
+        <p class="css-typing">sample = nil</p>
+      </div>
+    </div>
+
+    <!-- <div class="animation-bg"></div>
+    <div class="animation-orange"></div> -->
+
+    <header class="header">
+      <div class="header__inner">
+        <button
+          id="js-hamburger"
+          type="button"
+          class="hamburger"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="メニューを開く"
+        >
+          <span class="hamburger__line"></span>
+          <span class="hamburger__text"></span>
+        </button>
+        <div class="header__nav-area js-nav-area" id="navigation">
+          <nav id="js-global-navigation" class="global-navigation">
+            <ul class="global-navigation__list">
+              <li>
+                <a href="#" class="global-navigation__link"> メニュー </a>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="global-navigation__link -accordion js-sp-accordion-trigger"
+                  aria-expanded="false"
+                  aria-controls="accordion1"
+                >
+                  親メニュー
+                </button>
+                <div id="accordion1" class="accordion js-accordion">
+                  <ul class="accordion__list">
+                    <li>
+                      <a href="#" class="accordion__link"> 子メニュー </a>
+                    </li>
+                    <li>
+                      <a href="#" class="accordion__link"> 子メニュー </a>
+                    </li>
+                    <li>
+                      <a href="#" class="accordion__link"> 子メニュー </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="global-navigation__link"> メニュー </a>
+              </li>
+            </ul>
+            <div id="js-focus-trap" tabindex="0"></div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- 
+    <header>
+      <h1>
+        <a href="http://127.0.0.1:5004/" class="header-text">NIL</a>
+      </h1>
+      <nav class="pc-nav">
+        <ul>
+          <li><a href="{{ url_for('news') }}">NEWS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="{{ url_for('company') }}">COMPANY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header> -->
+
+    <div class="header-img">
+      <p class="text">nil</p>
+    </div>
+
+    <div class="animation-bg"></div>
+    <div class="animation-orange"></div>
+
+    <!-- <div class="css-typing">
+      <p>sample = nil</p>
+      <p>p sample.nil?</p>
+      <p>true</p>
+    </div> -->
+
+    <!-- <section>
+      <h2 class="card__text">こんにちわ</h2>
+    </section> -->
+    <section class="about-section">
+      <div class="about-group">
+        <div class="about-class">
+          <h4>About</h4>
+        </div>
+        <div class="about-exp">
+          <p class="about-exps">
+            二ルソフトウェアはソフトウェアツールを提供しています．
+            さまざまなドメインに対応しています． 車両システム 医療システム
+            その他 二ルソフトウェアはソフトウェアツールを提供しています．
+            さまざまなドメインに対応しています． 車両システム 医療システム
+            その他 二ルソフトウェアはソフトウェアツールを提供しています．
+            さまざまなドメインに対応しています． 車両システム 医療システム
+            その他
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="approach-sec">
+      <div class="cards">
+        <article class="card paper">
+          <div>
+            <p class="card-title">01</p>
+            <h2 class="card__text">プロセスコンサルテーション</h2>
+            <a href="" class="btn btn--yellow btn--cubic">PUSH!</a>
+          </div>
+        </article>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div>
+            <p class="card-title">02</p>
+            <h2 class="card__text">アプリケーション開発</h2>
+          </div>
+        </article>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div>
+            <p class="card-title">03</p>
+            <h2 class="card__text">医療情報の収集と解析</h2>
+          </div>
+        </article>
+      </div> -->
+    <div class="horizontal_scroll">
+      <article class="sticky">
+        <h2>'Products'</h2>
+        <div class="scroller">
+          <section>
+            <img
+              src="{{ url_for('static', filename='img/IMG_0081.PNG') }}"
+              class="caption-img"
+            />
+            <h3 class="seihin-font">
+              <a href="{{ url_for('seihin_page') }}" class="seihin-one">xDTS</a>
+            </h3>
+            <p class="caption-info">
+              さまざまな分野の組織で必要となる情報収集およびデータの整理を,Webベースで現場にストレスなく実現するための支援ツールです.
+            </p>
+          </section>
+          <section>
+            <img src="https://placehold.jp/600x300.png" class="caption-img" />
+            <h3 class="seihin-font">
+              <a href="{{ url_for('seihin_page') }}" class="seihin-one">xDTS</a>
+            </h3>
+            <p class="caption-info">
+              さまざまな分野の組織で必要となる情報収集およびデータの整理を,Webベースで現場にストレスなく実現するための支援ツールです.
+            </p>
+          </section>
+          <section>
+            <img src="https://placehold.jp/600x300.png" class="caption-img" />
+            <h3 class="seihin-font">
+              <a href="{{ url_for('seihin_page') }}" class="seihin-one">xDTS</a>
+            </h3>
+            <p class="caption-info">
+              さまざまな分野の組織で必要となる情報収集およびデータの整理を,Webベースで現場にストレスなく実現するための支援ツールです.
+            </p>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <!-- <section>
+      <article>
+        <h5>
+          私たちは,さまざな<span class="special-font"
+            >{{'ソフトウェアツール'}}</span
+          >を開発しています.
+        </h5>
+      </article>
+    </section> -->
+
+    <footer class="footer-section">
+      <div class="footer-semi">
+        <div class="company-sec">
+          <p class="company-txt">株式会社 NILsoftware.Inc</p>
+          <p class="company-txt">〒157-0073 東京都世田谷区砧２丁目１７−７</p>
+          <p class="company-txt">TEL:03-3749-8601</p>
+        </div>
+        <div class="footer-inform">
+          <button type="button" name="name" value="value" class="footer-button">
+            お問い合わせ→
+          </button>
+        </div>
+      </div>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.908694491104!2d139.61298821074402!3d35.64460633187167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f33abd75a25b%3A0x1d449510cb3746e7!2sNIL!5e1!3m2!1sja!2sjp!4v1740385155465!5m2!1sja!2sjp"
+          width="900"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="footer-bottom">
+        <div class="bottom-txt">
+          <p class="bottom-p">sample textsample textsample text</p>
+        </div>
+        <div class="bottom-item">
+          <img
+            src="{{ url_for('static', filename='img/logo-black.png') }}"
+            class="footer-img"
+          />
+
+          <a
+            href="https://www.instagram.com/cytoskelton?igsh=MXVzZ2szcWZkYXl2dA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="{{ url_for('static', filename='img/Instagram_Glyph_Black.svg') }}"
+              class="footer-img"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-div">
+      <p class="footer-txt">Copyright 2022 NIL Inc.</p>
+    </div>
+  </body>
+</html>

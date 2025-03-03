@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+
+body {
+  /* margin: 0; */
+  overflow-x: clip;
+  /* background-color: blue; */
+}
+article:not(.sticky) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: whitesmoke; */
+}
+h2 {
+
+  /* text-align: center; */
+  font-size: 86px; /* フォントサイズも変更可能 */
+  position: relative;
+  color: darkorange;
+  /* margin-bottom: 80px; */
+  /* border-bottom: 2px solid darkorange; */
+  margin-top: 0em;
+
+}
+
+/* header */
+.header-text{
+    font-size: 40px;
+  }
+header{
+    width: 100%;
+    padding: 30px 4% 30px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+h1{
+    margin: 0;padding: 0;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    margin-right: 8em;
+}
+li{
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    color: black;
+}
+nav{
+    margin: 0 0 0 auto;
+}
+
+main{
+    margin: 0em 300px;
+    max-width: 768px;
+    /* position: absolute; */
+    /* background-color: whitesmoke; */
+    position: relative;
+    top: 150px;
+}
+.news-content{
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+p{
+margin-bottom: 16px;
+}
+.news-space{
+    position: relative;
+    left: 290px;
+}
+.news_box{
+    /* background-color: whitesmoke; */
+    width: 700px;
+    display: inline-block;
+}
+.news_text{
+    font-size: 26px;
+    margin-bottom: 0em;
+}
+.news-date p{
+    /* background-color: skyblue; */
+    margin-bottom: 0em;
+}
+
+.box {
+    box-shadow: 0px 0px 15px 0px rgba(98,98,98,0.8); /*影の指定*/
+    padding:10px;
+    }
+    .box p {
+    margin:0;
+    padding:0;
+    }
+
+/* kokokara */

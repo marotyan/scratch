@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIL</title>
+    <meta name="description" content="環境について考える" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/stooyle.css') }}"
+    />
+    <script src="{{ url_for('static', filename='script.js') }}" def></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="header-logo" href="./index.html">
+          <h1>NIL</h1>
+        </a>
+        <div class="header-site-menu">
+          <nav class="site-menu">
+            <ul>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./contact">contact</a></li>
+              <li><a href="./portfolio">portfolio</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>xDTS</h2>
+      <div class="container">
+        <h1 class="type">プロジェクトを管理します。</h1>
+        <p>簡単に、そして正確に。</p>
+      </div>
+
+      <!-- <div class="seihin-qa">
+        <div class="qa1">
+          <h4>汎用的なプラットフォーム</h4>
+          <img
+            src="{{ url_for('static', filename='img/slist7.PNG') }}"
+            class="caption-img3"
+          />
+          <p>
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+        <div class="qa2">
+          <h4>汎用的なプラットフォーム</h4>
+          <img
+            src="{{ url_for('static', filename='img/slist7.PNG') }}"
+            class="caption-img3"
+          />
+          <p>
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+        <div class="qa3">
+          <h4>汎用的なプラットフォーム</h4>
+          <img
+            src="{{ url_for('static', filename='img/slist7.PNG') }}"
+            class="caption-img3"
+          />
+          <p>
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+      </div> -->
+      <ul class="horizontal-list">
+        <img
+          src="{{ url_for('static', filename='img/sample2.PNG') }}"
+          class="item"
+        />
+        <img
+          src="{{ url_for('static', filename='img/sample2.PNG') }}"
+          class="item"
+        />
+      </ul>
+      <!-- <div class="seihin-setumei">
+        <img
+          src="{{ url_for('static', filename='img/slist7.PNG') }}"
+          class="caption-img2"
+        />
+        <div class="seihin-cmt">
+          <h4 class="seihin-txt1">汎用的なプラットフォーム</h4>
+          <p class="seihin-txts">
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+      </div>
+      <div class="seihin-setumei-sec">
+        <img src="https://placehold.jp/300x150.png" class="caption-img2" />
+
+        <div class="seihin-cmt">
+          <h4 class="seihin-txt2">汎用的なプラットフォーム</h4>
+          <p class="seihin-txts">
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+      </div> -->
+
+      <div class="tab-2">
+        <label>
+          <input type="radio" name="tab-2" checked />
+          1. プロジェクト管理の効率化
+        </label>
+        <div class="caption-box">
+          <img
+            src="{{ url_for('static', filename='img/seihin1.PNG') }}"
+            class="caption-img"
+          />
+        </div>
+
+        <label>
+          <input type="radio" name="tab-2" />
+          2. 権限管理・情報共有の最適化
+        </label>
+        <div class="caption-box">
+          <img
+            src="{{ url_for('static', filename='img/seihin3.PNG') }}"
+            class="caption-img"
+          />
+        </div>
+
+        <label>
+          <input type="radio" name="tab-2" />
+          3. 作業履歴の透明性向上
+        </label>
+        <div class="caption-box">
+          <p>
+            サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="seihin-qa">
+        <div class="qa1">
+          <h4>汎用的なプラットフォーム</h4>
+          <img
+            src="{{ url_for('static', filename='img/slist7.PNG') }}"
+            class="caption-img3"
+          />
+          <p>
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+        <div class="qa2">
+          <h4>汎用的なプラットフォーム</h4>
+          <img
+            src="{{ url_for('static', filename='img/slist7.PNG') }}"
+            class="caption-img3"
+          />
+          <p>
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+        <div class="qa3">
+          <h4>汎用的なプラットフォーム</h4>
+          <img
+            src="{{ url_for('static', filename='img/slist7.PNG') }}"
+            class="caption-img3"
+          />
+          <p>
+            情報共有や知識が組織にとって重要である分野の組織で広くご利用いただけます．扱う情報の項目は，テンプレート機能により自由に定義することができます．
+          </p>
+        </div>
+      </div> -->
+      <h5>お問合せ</h5>
+      <div class="form-section">
+        <div>
+          <p class="form-txt">
+            xDTSのさまざまな機能をより知っていただくため，xDTS
+            を試用できる環境をご用意しています．ご希望の方は．お問い合わせメニューより，下記必要事項をご記入の上，件名を「xDTS試用希望」としてご連絡ください．2営業日以内に担当者よりご連絡差し上げます．
+          </p>
+        </div>
+        <div class="form-main"></div>
+      </div>
+      <div class="cp_qa02">
+        <div class="cp_actab">
+          <input id="cp_tabfour021" type="checkbox" name="tabs" />
+          <label for="cp_tabfour021"
+            >「不具合管理」と「障害管理」の違いは何ですか？
+          </label>
+          <div class="cp_actab-content">
+            弊社では，管理対象の出荷前を「不具合」，出荷後を「障害対応」と位置付けています．
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour022" type="checkbox" name="tabs" />
+          <label for="cp_tabfour022"
+            >ライセンス数の数え方を教えてください
+          </label>
+          <div class="cp_actab-content">
+            システムの数がライセンス数の対象となります．
+            例えば，Aプロジェクトで不具合管理システムを登録，Bプロジェクトで予定管理システムと不具合管理システムを登録したとすると，使用しているライセンス数は，3つとなります．
+            使用しなくなったシステムを無効にした場合，使用ライセンス数の対象から外れます．例えば，上記のBプロジェクトで予定管理システムを無効とした場合，使用しているライセンス数は2つということになります．
+            無効にしたシステムは削除したわけではありませんので，復活させることにより通常通り使用することができるようになります．
+            このとき，復活させるシステム1つにつきライセンスが1つ必要です．ユーザ数に関しては，無制限です．
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour023" type="checkbox" name="tabs" />
+          <label for="cp_tabfour023"
+            >ユーザ毎に機能を制限することはできますか？
+          </label>
+          <div class="cp_actab-content">
+            xDTSでは，システム登録の際に利用するテンプレートを選択して
+            登録します．
+            情報を管理する元となるテンプレートはWeb上で自由にカスタマイズすることができます．レポート項目の増減はもちろん，各項目の入力方法や表示形式も情報の特性を考慮して設定することができます．
+            ただ，既に登録されているシステムにて項目を追加・削除することは現在のところ行えません．この場合，必要な項目内容で作成したテンプレートで一旦新しくシステムを作成し，システムコピー機能にて既存のレポートデータを一括コピーしていただくことで，新しいシステムを今までのシステムと同様に利用していただくことが可能になります．
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour023" type="checkbox" name="tabs" />
+          <label for="cp_tabfour023"
+            >レポートの項目を増やしたり，減らしたりすることはできますか？
+          </label>
+          <div class="cp_actab-content">
+            必要な種々の情報整理が可能です.見たい情報をビューとして設定することができます．また，このオリジナルのビューに対して，素早いアクセスを行うための設定も可能です．
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour023" type="checkbox" name="tabs" />
+          <label for="cp_tabfour023"
+            >Excelからのインポートはできますか？
+          </label>
+          <div class="cp_actab-content">
+            CSV形式のデータファイルとして作成していただくことで，xDTSへアップロード(インポート)することが可能です．
+            xDTSからのダウンロード(エクスポート)につきましても，CSV形式での出力が可能となっております．
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour023" type="checkbox" name="tabs" />
+          <label for="cp_tabfour023">ドキュメントの管理はできますか？ </label>
+          <div class="cp_actab-content">
+            xDTSのレポートにはファイルの添付を行うことができますので，こちらを利用することでドキュメントの管理を行うことが可能です．
+            また，xDTSはレポートごとに世代管理が行えます．こちらを利用することでレポート単位の版管理を行うことができます．
+            この二つの機能を併せて利用することでドキュメントの版管理などを行うことが可能です．
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour023" type="checkbox" name="tabs" />
+          <label for="cp_tabfour023"
+            >ｘDTSは，ソフトウェア開発以外の業務にも活用できるのでしょうか？
+          </label>
+          <div class="cp_actab-content">
+            xDTSは，汎用のレポートエンジンを持っていますので，さまざまな業務にご活用いただけます．
+            帳票で管理されている内容（子票を持つものも含みます）を WEB
+            を介して，簡単に管理することができます．もともとはソフトウェア開発用に作られているので，標準でご提供するテンプレートはソフトウェア開発に特化したものです．ですが，テンプレートはお客様によって自由に設定できますので，帳票イメージで管理している任意の目的にご利用いただけます．
+          </div>
+        </div>
+      </div>
+      <footer class="footer-section">
+        <div class="footer-div">
+          <p class="footer-txt">Copyright 2022 NIL Inc.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

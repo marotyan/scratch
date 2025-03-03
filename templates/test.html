@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIL</title>
+    <meta name="description" content="環境について考える" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/test.css') }}"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="header-logo" href="./index.html">
+          <h1>NIL</h1>
+        </a>
+        <div class="header-site-menu">
+          <nav class="site-menu">
+            <ul>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./contact">contact</a></li>
+              <li><a href="./portfolio">portfolio</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>CONTACT</h2>
+      <p class="contact-info">お問い合わせ</p>
+      <!-- <header>
+      <h1>
+        <a href="http://127.0.0.1:5004/" class="header-text">NIL</a>
+      </h1>
+      <nav class="pc-nav">
+        <ul>
+          <li><a href="{{ url_for('news') }}">ニュース</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+    </header> -->
+
+      <div class="form-main">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <div class="required">
+            <p class="input-name">お名前</p>
+          </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="input-txt1"
+            required
+          />
+
+          <div class="required">
+            <p class="input-name">メールアドレス</p>
+          </div>
+          <input type="text" name="email" placeholder="Your Email" required />
+
+          <div class="required">
+            <p class="input-name">お問い合わせ種別</p>
+          </div>
+
+          <select class="inform-option" name="inform-option">
+            <option>xDTSについて</option>
+            <option>選択肢のサンプル2</option>
+            <option>選択肢のサンプル3</option>
+          </select>
+
+          <div class="required">
+            <p class="input-name">お問い合わせ内容</p>
+          </div>
+
+          <textarea
+            name="message"
+            placeholder="   お問い合わせ内容"
+            required
+            class="inform-naiyou"
+          ></textarea>
+          <input
+            type="hidden"
+            name="accessKey"
+            value="9fa092ae-2598-4e8a-ad34-173988a9e393"
+          />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="https://www.google.com/"
+          />
+          <input type="submit" value="送信" class="submit-button" />
+        </form>
+      </div>
+      <footer class="footer-section">
+        <div class="footer-div">
+          <p class="footer-txt">Copyright 2022 NIL Inc.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

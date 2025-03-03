@@ -1,0 +1,192 @@
+@charset 'UTF-8';
+
+body {
+  /* margin: 0; */
+  overflow-x: clip;
+  /* background-color: blue; */
+}
+article:not(.sticky) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: whitesmoke; */
+}
+h2 {
+  /* text-align: center; */
+  font-size: 72px;
+  position: relative;
+  color: darkorange;
+  /* margin-bottom: 80px; */
+  /* border-bottom: 2px solid darkorange; */
+  margin-top: 0em;
+  right: 100px;
+}
+
+/* header */
+.header-text {
+  font-size: 40px;
+}
+header {
+  width: 100%;
+  padding: 30px 4% 30px;
+  background-color: transparent;
+  /* position: fixed; */
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  margin-right: 8em;
+}
+li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  color: black;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+
+main {
+  margin: 0em auto;
+  max-width: 920px;
+  /* position: absolute; */
+  /* background-color: whitesmoke; */
+  position: relative;
+  top: 150px;
+}
+.news-content {
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+p {
+  margin-bottom: 16px;
+}
+.news-space {
+  position: relative;
+  left: 290px;
+}
+.news_box {
+  /* background-color: whitesmoke; */
+  width: 700px;
+  display: inline-block;
+}
+.news_text {
+  font-size: 26px;
+  margin-bottom: 0em;
+}
+.news-date p {
+  /* background-color: skyblue; */
+  margin-bottom: 0em;
+}
+
+.box {
+  box-shadow: 0px 0px 15px 0px rgba(98, 98, 98, 0.8); /*影の指定*/
+  padding: 10px;
+}
+.box p {
+  margin: 0;
+  padding: 0;
+}
+
+/* kokokara */
+/* .company-img {
+  position: relative;
+  height: 350px;
+  left: 550px;
+  display: flex;
+} */
+.p-coment {
+  position: relative;
+  width: 500px;
+  top: 155px;
+}
+h3 {
+  position: absolute;
+}
+/* @media screen {
+    
+} */
+h5,
+h6,
+h7 {
+  background-color: whitesmoke;
+}
+
+/* 表部分 */
+.table_design04 {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+}
+.table_design04 th,
+.table_design04 td {
+  padding: 1em;
+}
+.table_design04 th {
+  border-right: 1px solid orange;
+  font-weight: bold;
+  text-align: left;
+  width: 20%;
+  min-width: 4em;
+}
+/* 企業理念セクション */
+.cop-rinen {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 30px 0em;
+  margin: 50px 0em;
+}
+.cop-sec1 {
+  background-color: white;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  border-bottom: #e2e2e2 solid 2px;
+}
+.cop-txt1 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.cop-til2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
+}
+.cop-txt1 {
+  margin-top: 20px;
+}
+.cop-txt2,
+.cop-txt3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.cop-map {
+  margin: 0em 30px;
+}
+/* media */
+@media screen and (max-width: 600px) {
+  /* body {
+    color: blue;
+  } */
+}
